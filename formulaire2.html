@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Contact </title>
+
+	<link href="style.css" type="text/css" rel="stylesheet"/>
+	<meta charset="utf-8">
+	<meta name="description" content="formulaire d'inscription"/>
+	<meta name="keywords" content=" formulaire, inscripiton, mail, mot de passe, id"/>
+</head>
+<body>
+
+<h1> Vous souhaitez nous contacter ? </h1>
+<h2> &Eacute;crivez nous : </h2>
+
+<div class="formulaire3">
+	<h3> Merci de remplir tout les champs </h3>
+
+<form method="post" action="form.php">
+	<label for="pays"> Pays </label>
+		<select id="pays" name="pays">
+			<optgroup label="Europe">
+				<option value="France">France</option>
+				<option value="Suisse">Suisse</option>
+				<option value="Belgique">Belgique</option>
+				<option value="Luxembourg">Luxembourg</option>
+			</optgroup>
+			<optgroup label="Asie">
+				<option value="Bali">Bali</option>
+				<option value="Thaïlande">Thaïlande</option>
+				<option value="Thaïlande">Chine</option>
+				<option value="Japon">Japon</option>
+			</optgroup>
+			<optgroup label="Etats-unis">
+				<option value="Canada"> Canada </option>
+				<option value="Usa"> Usa </option>
+			</optgroup>
+			<optgroup label="Amerique sud">
+				<option value="Colombie"> Colombie </option>
+				<option value="Bolivie"> Bolivie </option>
+				<option value="P&eacute;rou">P&eacute;rou</option>
+				<option value="Argentine">Argentine</option>
+			</optgroup>
+			<optgroup label="DOM-TOM">
+				<option value="R&eacute;union">R&eacute;union</option>
+				<option value="Guadeloupa">Guadeloupe</option>
+				<option value="Martinique">Martinique</option>
+				<option value="Nouvelle-Cal&eacute;donie">Nouvelle-Cal&eacute;donie</option>
+			</optgroup>
+		</select>
+
+			<label for="name"> Nom et Prenom:</label>
+		<input type="text" name="name" id="name">
+		
+		<label for="mail">E-mail:</label>
+		<input type="email" name="mail" id="mail">
+		</br>
+		
+
+		<textarea name="mazonedetexte" id="mazonedetexte" rows="10" cols="40" maxlength="250">&eacute;crivez votre message</textarea>
+		<input type="submit" name="envoyer" value="envoyer">
+
+	</form>
+</div>
+
+</body>
+</html>
